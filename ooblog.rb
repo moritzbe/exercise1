@@ -38,3 +38,6 @@ blog = OOBlog.new
 blog.add_post("Second Post", "Lorem ipsum is also the second text")
 blog.add_post("Third Post", "Lorem ipsum is even the third text")
 blog.front_page
+
+
+#writing it in a different way!
