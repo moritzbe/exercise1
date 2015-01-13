@@ -74,6 +74,6 @@ class Timeshifter
     end
 end
 
-somename = SRTProcessing.new("ShortExample.srt")
+somename = SRTProcessing.new("LongExample.srt")
 somename.shift_all(-2000)
 somename.make_new_file("output.srt")
