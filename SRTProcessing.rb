@@ -80,10 +80,18 @@ end
 
 Class Spellchecker
     def initialize (entries, filname)
-       puts entries.content
     end
 
-end
+    def create_a_checklist
+       wordslist = IO.read(filname)
+       entries.each do |entry| {
+       	entry.content.gsub(/[\n\r]/, ' ').split(" ").each {
+       	if wordslist.include? "#{entry.content.}"
+       }
+       wordslist << entriescontent.spilt(" ")
+   }
+    end
+
 end
 
 
