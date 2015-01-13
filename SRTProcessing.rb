@@ -30,6 +30,10 @@ class SRTProcessing
 		@entries << Entry.new(start_time, end_time, content, entry_index)
 	end
 
+	def get_entries
+		@entries
+	end
+
 	def shift_all(milis)
 		@entries.each { |entry| entry.shift_time(milis) }
 	end
@@ -74,8 +78,27 @@ class Timeshifter
     end
 end
 
+Class Spellchecker
+    def initialize (entries, filname)
+       puts entries.content
+    end
+
+end
+end
+
+
 
 somename = SRTProcessing.new("ShortExample.srt")
 somename.shift_all(5000)
 somename.shift_all(-2000)
 somename.make_new_file("output.srt")
+
+var = Spellchecker.new(somename.get_entries, "words.txt")
+
+
+
+
+
+
+
+
