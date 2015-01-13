@@ -25,7 +25,7 @@ class OOBlog
 end
 
 class Post
-	attr_reader :title, :text, :date
+	#attr_reader :title, :text, :date
 
 	def initialize(title, text)
 		@title = title
